@@ -1,0 +1,54 @@
+<% include ../common/header %>
+
+<body class="cyan grey darken-4">
+    <div id="login-page" class="row">
+        <!-- Start Page Loading -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <!-- End Page Loading -->
+
+        <div class="col s10 offset-s1 m8 offset-m2 l4 offset-l4 z-depth-4 card-panel grey lighten-4 hoverable loginCard">
+            <div class="card-content">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="input-field col s12 center">
+                            <p class="center login-form-text"><h4>Login</h4></p>
+                        </div>
+                    </div>
+                </div>
+                <form action="" method="post">
+                    <div class="row margin">
+                        <div class="input-field col s12">
+                            <i class="mdi-social-person-outline prefix"></i>
+                            <input id="login" type="text" class="validate" maxlength="15" required>
+                            <label for="UserName" data-error="" data-success="">Usuário</label>
+                        </div>
+                    </div>
+                    <div class="row margin">
+                        <div class="input-field col s12">
+                            <i class="mdi-action-lock-outline prefix"></i>
+                            <input id="password" type="password" class="validate" maxlength="15" minlength="3" required>
+                            <label for="password" data-error="" data-success="">Senha</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn waves-effect waves-light col s12" id="enter">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script>
+        $(document).keypress(function (event) {
+            if (event.keyCode == 13) {
+                $('#enter').trigger('click');
+            }
+        });
+        </script>
+    </div>
+</body>
+</html>
