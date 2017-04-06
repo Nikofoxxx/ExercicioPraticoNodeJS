@@ -4,5 +4,6 @@ module.exports = function(app)
 	, login = app.controllers.login;
 
 	app.get('/', login.index);
+	app.post('/login', login.login);
 
 };
