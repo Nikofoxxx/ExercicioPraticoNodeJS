@@ -7,18 +7,12 @@ module.exports = function (app) {
             res.render('login/index');
         },
 
-        logout: function (req, res) {
-            req.session.destroy();
-            res.redirect('/');
-        },
-
         login: function (req, res) {
             try {
-                var userName = req.body.login;
+                var login = req.body.login;
                 var password = req.body.password;
 
-
-                Users.getToLogin(userName, password, function (user) {
+                Users.getToLogin(login, password, function (user) {
                     if (user != null) {
                         var userSession = {
                             'userName': user.userName
@@ -36,6 +30,11 @@ module.exports = function (app) {
             catch (ex) {
                 res.status(500).send("Problemas ao tentar acessar o Banco de Dados!");
             }
+        },
+
+        logout: function (req, res) {
+            req.session.destroy();
+            res.redirect('/');
         },
     };
     return LoginController;

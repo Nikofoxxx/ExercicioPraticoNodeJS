@@ -5,5 +5,6 @@ module.exports = function(app)
 
 	app.get('/', login.index);
 	app.post('/login', login.login);
+	app.get('/logout', login.logout);
 
 };

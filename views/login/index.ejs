@@ -1,5 +1,6 @@
 <% include ../common/header %>
-
+    <script type="text/javascript" src="/javascripts/login/login.js"></script>
+</head>
 <body class="cyan grey darken-4">
     <div id="login-page" class="row">
         <!-- Start Page Loading -->
@@ -19,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="/login" method="post">
+                <form id="loginForm" action="/login" method="post">
                     <div class="row margin">
                         <div class="input-field col s12">
                             <i class="mdi-social-person-outline prefix"></i>

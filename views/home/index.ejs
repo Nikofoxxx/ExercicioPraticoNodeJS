@@ -1,6 +1,50 @@
 <% include ../common/header %>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/prism.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/page-center.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/media-hover-effects.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/style-horizontal.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/style.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/custom-style.css" />
 
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/plugins/chartist.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/plugins/fullcalendar.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/plugins/jquery-jvectormap.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/plugins/magnific-popup.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/plugins/perfect-scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/dashboard/plugins/xcharts.min.css" />
+</head>
 <body>
-    <h3>index</h3>
+﻿<nav class="light-green">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+    </div>
+</nav>
+    <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="width: 240px;">
+            <li class="user-details light-green darken-2">
+                <div class="row">
+                    <div class="col col s4 m4 l4">
+                        <img src="/img/account.png" class="circle responsive-img valign profile-image" />
+                    </div>
+                    <div class="col col s8 m8 l8">
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">
+                            TESTE
+                            <i class="mdi-navigation-arrow-drop-down right" style="width:1rem !important;"></i>
+                        </a>
+                        <ul id="profile-dropdown" class="dropdown-content">
+                          <li class="divider"></li>
+                            <li><a href="/logout"><i class="mdi-hardware-keyboard-tab"></i>Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="bold"><a href="/index" class="waves-effect waves-light-green"><i class="small material-icons">web</i> Home</a>
+        </ul>
+    </aside>
 </body>
 </html>

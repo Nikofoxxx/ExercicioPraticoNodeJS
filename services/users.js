@@ -7,11 +7,11 @@ module.exports = function(app)
 	var UsersService = 
 	{
 
-		getToLogin: function(userName, password, callback)
+		getToLogin: function(login, password, callback)
 		{
 
-			var query = { userName: userName, passwd: password };
-		
+			var query = { login: login, password: password };
+
 			Users.findOne(query)
 				.exec(function(error, user)
 				{
